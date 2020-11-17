@@ -1,0 +1,33 @@
+.body {
+  background-color: #151515;
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  font-family: monospace;
+}
+.l-question-title {
+  margin: 0;
+  color: #b5e853;
+  font-weight: bold;
+}
+.l-question {
+  list-style: none;
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 5px;
+  line-height: 2;
+}
+pre {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-size: 16px;
+  color: #b5e853;
+  border-radius: 2px;
+  word-wrap: normal;
+  overflow: auto;
+  overflow-y: hidden;
+}
+pre.result {
+  width: fit-content;
+}

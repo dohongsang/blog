@@ -1,1 +1,183 @@
-<h1>DO HONG SANG</h1>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body class="body">
+    <h1>Poeta’s Test Exam</h1>
+    <p class="l-question-title">
+      1. What is the correct HTML for referring to an external style sheet?
+    </p>
+    <ul class="l-question">
+      <li>A. &lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;</li>
+      <li>
+        B. &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+      </li>
+      <li>C. &lt;style src="mystyle.css"&gt;</li>
+    </ul>
+    <pre class="result">Result: B</pre>
+    <p class="l-question-title">
+      2. What is the correct JavaScript syntax for opening a new window called
+      "w2" ?
+    </p>
+    <ul class="l-question">
+      <li>A. w2 = window.open("http://www.w3schools.com");</li>
+      <li>B. w2 = window.new("http://www.w3schools.com");</li>
+    </ul>
+    <pre class="result">Result: A</pre>
+    <p class="l-question-title">
+      3. How can you detect the client's browser name?
+    </p>
+    <ul class="l-question">
+      <li>A. navigator.appName</li>
+      <li>B. browser.name</li>
+      <li>C. client.navName</li>
+    </ul>
+    <pre class="result">Result: A</pre>
+    <p class="l-question-title">
+      4. The HTML <canvas> element is used to:
+    </p>
+    <ul class="l-question">
+      <li>A. draw graphics</li>
+      <li>B. create draggable elements</li>
+      <li>C. manipulate data in MySQL</li>
+      <li>D. display database records</li>
+    </ul>
+    <pre class="result">Result: A</pre>
+    <p class="l-question-title">
+      5. What is the difference between == and === ?
+    </p>
+    <ul class="l-question">
+      <li>A. == is the strict equality operator and === is the abstract equality operator</li>
+      <li>B. The === operator will compare for equality after doing any necessary type conversions</li>
+      <li>C. Both a and b are correct</li>
+      <li>D. Both a and b are incorrect</li>
+    </ul>
+    <pre class="result">Result: D</pre>
+    <p class="l-question-title">
+      6. What is the result of the below code?
+    </p>
+    <pre>function Person(name) {
+  this.name = name;
+}
+
+var person = Person("Your Name");
+console.log(person.name);</pre>
+    <ul class="l-question">
+      <li>A. undefined</li>
+      <li>B. Person { name: "Your Name" }</li>
+      <li>C. "Your Name"</li>
+      <li>D. Uncaught TypeError: Cannot read property 'name' of undefined</li>
+    </ul>
+    <pre class="result">Result: D</pre>
+    <p class="l-question-title">
+      7. What are the cons of using Promise instead of callbacks?
+    </p>
+    <ul class="l-question">
+      <li>A. Avoid callback hell which can be unreadable</li>
+      <li>B. Slightly more complex code (debatable)</li>
+      <li>C. Makes it easy to write sequential asynchronous code that is readable with .then()</li>
+      <li>D. Makes it easy to write parallel asynchronous code with Promise.all()</li>
+    </ul>
+    <pre class="result">Result: B</pre>
+    <p class="l-question-title">
+      8. What is the result of the below code? Sequence is
+    </p>
+    <pre>function fn() {
+  console.log(this);
+}
+
+var obj = {
+  value: 5,
+};
+
+var boundFn = fn.bind(obj);
+boundFn();
+fn.call(obj);
+fn.apply(obj);</pre>
+    <ul class="l-question">
+      <li>A. undefined, { value: 5 }, { value: 5 }</li>
+      <li>B. undefined, { value: 5 }, undefined</li>
+      <li>C. undefined, undefined, { value: 5 }</li>
+      <li>D. { value: 5 }, { value: 5 }, { value: 5 }</li>
+    </ul>
+    <pre class="result">Result: D</pre>
+    <p class="l-question-title">
+      9. What is the design pattern in JavaScript using in the below code?
+    </p>
+    <pre>var Tesla = function (model) {
+  var version, autodrive;
+  version = model;
+
+  gofast = function () {
+    return `${model} going maximum plaid speed`;
+  };
+
+  autodrive = function () {
+    return "Engaging autodrive.";
+  };
+
+  return {
+    gofast: gofast,
+    autodrive: autodrive,
+  };
+};
+
+var roadster = new Tesla("Roadster");
+roadster.gofast();
+roadster.autodrive();</pre>
+    <ul class="l-question">
+      <li>A. The Module Pattern</li>
+      <li>B. The Revealing Module Pattern</li>
+      <li>C. The Singleton Pattern</li>
+      <li>D. The Prototype Pattern</li>
+    </ul>
+    <pre class="result">Result: D</pre>
+    <h2>SECTION</h2>
+    <pre>There is a positive integer n. Please find four numbers a, b, c, d (they can be the same number),
+let:
+ a2 + b2 + c2 + d2 = n and a >= b >= c >= d > 0
+The result should be an array [a, b, c, d]; Perhaps there are a lot of valid results, please choose
+the one which has largest a or largest b (if the value of a is the same) or largest c (if the value of
+a, b are the same).
+Some examples:
+findNumbers(16) === [2, 2, 2, 2]
+findNumbers(110) === [9, 4, 3, 2]
+findNumbers(211) === [13, 5, 4, 1]
+findNumbers(99) === [9, 4, 1, 1]</pre>
+<h3>Result</h3>
+      <pre>function findNumbers (n) {
+  let round = Math.floor(Math.sqrt(n));
+  for (let i = round; i > 0; i--) {
+    for (let j = i; j > 0; j--){
+      for (let k = j; k > 0; k--){
+        for (let l = k; l > 0; l--){
+          if (i*i + j*j + k*k + l*l === n && (i >= j && j >= k && k >= l)) {
+            return [i, j, k, l];
+          }
+        }
+      }
+    }
+  }
+}
+
+console.log(findNumbers(16)); => [2, 2, 2, 2]
+console.log(findNumbers(110)); => [9, 4, 3, 2]
+console.log(findNumbers(211)); => [13, 5, 4, 1]
+console.log(findNumbers(99)); => [9, 4, 1, 1]</pre>
+  </body>
+</html>
