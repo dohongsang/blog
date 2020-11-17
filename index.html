@@ -49,7 +49,7 @@
     </ul>
     <pre class="result">Result: A</pre>
     <p class="l-question-title">
-      4. The HTML <canvas> element is used to:
+      4. The HTML &lt;canvas&gt; element is used to:
     </p>
     <ul class="l-question">
       <li>A. draw graphics</li>
@@ -62,21 +62,27 @@
       5. What is the difference between == and === ?
     </p>
     <ul class="l-question">
-      <li>A. == is the strict equality operator and === is the abstract equality operator</li>
-      <li>B. The === operator will compare for equality after doing any necessary type conversions</li>
+      <li>
+        A. == is the strict equality operator and === is the abstract equality
+        operator
+      </li>
+      <li>
+        B. The === operator will compare for equality after doing any necessary
+        type conversions
+      </li>
       <li>C. Both a and b are correct</li>
       <li>D. Both a and b are incorrect</li>
     </ul>
     <pre class="result">Result: D</pre>
-    <p class="l-question-title">
-      6. What is the result of the below code?
-    </p>
-    <pre>function Person(name) {
+    <p class="l-question-title">6. What is the result of the below code?</p>
+    <pre>
+function Person(name) {
   this.name = name;
 }
 
 var person = Person("Your Name");
-console.log(person.name);</pre>
+console.log(person.name);</pre
+    >
     <ul class="l-question">
       <li>A. undefined</li>
       <li>B. Person { name: "Your Name" }</li>
@@ -90,14 +96,20 @@ console.log(person.name);</pre>
     <ul class="l-question">
       <li>A. Avoid callback hell which can be unreadable</li>
       <li>B. Slightly more complex code (debatable)</li>
-      <li>C. Makes it easy to write sequential asynchronous code that is readable with .then()</li>
-      <li>D. Makes it easy to write parallel asynchronous code with Promise.all()</li>
+      <li>
+        C. Makes it easy to write sequential asynchronous code that is readable
+        with .then()
+      </li>
+      <li>
+        D. Makes it easy to write parallel asynchronous code with Promise.all()
+      </li>
     </ul>
     <pre class="result">Result: B</pre>
     <p class="l-question-title">
       8. What is the result of the below code? Sequence is
     </p>
-    <pre>function fn() {
+    <pre>
+function fn() {
   console.log(this);
 }
 
@@ -108,7 +120,8 @@ var obj = {
 var boundFn = fn.bind(obj);
 boundFn();
 fn.call(obj);
-fn.apply(obj);</pre>
+fn.apply(obj);</pre
+    >
     <ul class="l-question">
       <li>A. undefined, { value: 5 }, { value: 5 }</li>
       <li>B. undefined, { value: 5 }, undefined</li>
@@ -119,7 +132,8 @@ fn.apply(obj);</pre>
     <p class="l-question-title">
       9. What is the design pattern in JavaScript using in the below code?
     </p>
-    <pre>var Tesla = function (model) {
+    <pre>
+var Tesla = function (model) {
   var version, autodrive;
   version = model;
 
@@ -139,7 +153,8 @@ fn.apply(obj);</pre>
 
 var roadster = new Tesla("Roadster");
 roadster.gofast();
-roadster.autodrive();</pre>
+roadster.autodrive();</pre
+    >
     <ul class="l-question">
       <li>A. The Module Pattern</li>
       <li>B. The Revealing Module Pattern</li>
@@ -148,7 +163,8 @@ roadster.autodrive();</pre>
     </ul>
     <pre class="result">Result: D</pre>
     <h2>SECTION</h2>
-    <pre>There is a positive integer n. Please find four numbers a, b, c, d (they can be the same number),
+    <pre>
+There is a positive integer n. Please find four numbers a, b, c, d (they can be the same number),
 let:
  a2 + b2 + c2 + d2 = n and a >= b >= c >= d > 0
 The result should be an array [a, b, c, d]; Perhaps there are a lot of valid results, please choose
@@ -158,9 +174,11 @@ Some examples:
 findNumbers(16) === [2, 2, 2, 2]
 findNumbers(110) === [9, 4, 3, 2]
 findNumbers(211) === [13, 5, 4, 1]
-findNumbers(99) === [9, 4, 1, 1]</pre>
-<h3>Result</h3>
-      <pre>function findNumbers (n) {
+findNumbers(99) === [9, 4, 1, 1]</pre
+    >
+    <h3>Result</h3>
+    <pre>
+function findNumbers (n) {
   let round = Math.floor(Math.sqrt(n));
   for (let i = round; i > 0; i--) {
     for (let j = i; j > 0; j--){
@@ -178,6 +196,7 @@ findNumbers(99) === [9, 4, 1, 1]</pre>
 console.log(findNumbers(16)); => [2, 2, 2, 2]
 console.log(findNumbers(110)); => [9, 4, 3, 2]
 console.log(findNumbers(211)); => [13, 5, 4, 1]
-console.log(findNumbers(99)); => [9, 4, 1, 1]</pre>
+console.log(findNumbers(99)); => [9, 4, 1, 1]</pre
+    >
   </body>
 </html>
